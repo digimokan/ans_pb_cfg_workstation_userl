@@ -86,10 +86,10 @@ applications.
 3. Power up the workstation PC. You will see a root prompt, at the `/root`
    directory.
 
-4. Edit `/root/install_disk_selection.yml` to specify the installation disks.
-   You can specify one disk, or two disks for a mirrored installation.
+4. Edit `/root/install_options.yml` to specify the installation disks and other
+   options. You can specify one disk, or two disks for a mirrored installation.
 
-5. Run the `install_arch_linux.sh` script to install Arch Linux to the
+5. Run the `/root/install_arch_linux.sh` script to install Arch Linux to the
    workstation.
 
    ```shell
@@ -151,10 +151,10 @@ was set up during configuration.
 │ │   ├── cpu-ucode/      # configure intel/amd cpu microcode to load at boot
 │ │   └── mirrors-update/ # update pacman mirrorlist file, if it's too old
 │ │
-│ ├─┬ scripts/
+│ ├─┬ scripts/            # to place onto Archiso USB stick
 │ │ │
-│ │ ├── install_arch_linux.sh       # shell script to install Arch Linux
-│ │ └── install_disk_selection.yml  # config file to specify install disks
+│ │ ├── install_arch_linux.sh  # shell script to install Arch Linux
+│ │ └── install_options.yml    # config file to specify install disks, etc
 │ │
 │ ├─┬ third_party/
 │ │ │
