@@ -1,0 +1,15 @@
+# INSTALL OPTIONS, PLACED ONTO ARCHISO USB STICK
+
+# install disk selection
+user_var_install_devices:
+  - "sda"
+  - "sdb"
+
+# workstation host name
+arch_install_def_hostname: (e.g. "wkstl")
+
+# SCRIPT CONFIG, SHOULD NOT MODIFY
+
+# repo to clone and place in '/root' dir of new workstation
+user_var_bootstrap_git_repo: "https://github.com/digimokan/ans_pb_cfg_workstation_userl.git"
+
