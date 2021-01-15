@@ -158,7 +158,7 @@ was set up during configuration.
 │ │
 │ ├─┬ third_party/
 │ │ │
-│ │ └── sh-make-archiso-zfs/  # shell script to create Archiso live USB
+│ │ └── make-archiso-zfs/ # shell script to create Archiso live USB
 │ │
 │ ├── ansible.cfg         # play-wide Ansible meta-config
 │ ├── configure.sh        # configures the workstation, post-installation
