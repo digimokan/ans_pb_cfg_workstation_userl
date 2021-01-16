@@ -1,0 +1,10 @@
+- hosts: localhost
+  connection: local
+  vars:
+    admin_user_and_group_name: "admin"
+    sudo_users_group_name: "wheel"
+  tasks:
+    - name: "Configure system clock, time, and time zone"
+      include_role:
+        name: ext/ans_role_config_time
+
