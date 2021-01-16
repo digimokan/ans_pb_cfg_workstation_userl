@@ -14,3 +14,8 @@ arch_install_def_hostname: "wkstl"
 # repo to clone and place in '/root' dir of new workstation
 user_var_bootstrap_git_repo: "https://github.com/digimokan/ans_pb_cfg_workstation_userl.git"
 
+# extra packages to install to new workstation
+user_var_extra_packages:
+  - "git"
+  - "ansible"
+
