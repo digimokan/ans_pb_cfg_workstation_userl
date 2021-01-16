@@ -1,13 +1,13 @@
 # OPTIONS FILE PLACED ONTO ARCHISO USB STICK
 # INSTALL OPTIONS FOR INSTALL SCRIPT
 
-# install disk selection
+# workstation install disk selection (one disk, or two for mirrored install)
 user_var_install_devices:
   - "sda"
   - "sdb"
 
 # workstation host name
-arch_install_def_hostname: (e.g. "wkstl")
+arch_install_def_hostname: "wkstl"
 
 # SCRIPT CONFIG, SHOULD NOT MODIFY
 
