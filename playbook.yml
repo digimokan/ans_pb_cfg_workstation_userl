@@ -7,4 +7,8 @@
     - name: "Configure system clock, time, and time zone"
       include_role:
         name: ext/ans_role_config_time
+    - name: "Update pacman mirror-server-list, as required"
+      include_role:
+        name: ext/ans_role_update_repo_servers
+
 
