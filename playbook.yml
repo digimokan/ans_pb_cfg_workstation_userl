@@ -50,4 +50,9 @@
         name: ext/ans_role_config_bash
       vars:
         user_name: "{{ admin_user_and_group_name }}"
+    - name: "Ignore select '.pacnew' files after upgrades"
+      include_role:
+        name: ext/ans_role_pacnew_ignore
+      vars:
+        pacnew_file_path: "/etc/pacman.d/mirrorlist"
 
