@@ -1,2 +1,6 @@
+# Archiso build output dir
 archiso_build
+
+# external (third-party) roles downloaded by ansible-galaxy cmd
+roles/ext/**
 
