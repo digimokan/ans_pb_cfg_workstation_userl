@@ -10,5 +10,9 @@
     - name: "Update pacman mirror-server-list, as required"
       include_role:
         name: ext/ans_role_update_repo_servers
-
+    - name: "Configure Intel/AMD CPU-microcode updates to apply with initramfs"
+      include_role:
+        name: ext/ans_role_cpu_microcode
+      vars:
+        boot_dir_path: "/ROOT/default/@/boot"
 
