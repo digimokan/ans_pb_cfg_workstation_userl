@@ -54,5 +54,6 @@
       include_role:
         name: ext/ans_role_pacnew_ignore
       vars:
-        pacnew_file_path: "/etc/pacman.d/mirrorlist"
+        file_paths:
+          - "/etc/pacman.d/mirrorlist"
 
