@@ -11,14 +11,6 @@
     - name: "Update pacman mirror-server-list, as required"
       include_role:
         name: ext/ans_role_config_pkg_repo_list_updates
-    - name: "Update the OS package-repo list"
-      include_role:
-        name: ext/ans_role_config_pkg_repo_list_updates
-        tasks_from: inc/update_pkg_repo_list.yml
-      vars:
-        pkg_repo_list_file_path: "/etc/pacman.d/mirrorlist"
-        pkg_repo_list_bkup_filename: "mirrorlist_bkup"
-        pkg_repo_list_age_cutoff: "1s"
     - name: "Configure Intel/AMD CPU-microcode updates to apply with initramfs"
       include_role:
         name: ext/ans_role_cpu_microcode
