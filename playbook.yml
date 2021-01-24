@@ -10,10 +10,10 @@
         name: ext/ans_role_config_time
     - name: "Update pacman mirror-server-list, as required"
       include_role:
-        name: ext/ans_role_update_repo_servers
+        name: ext/ans_role_config_pkg_repo_list_updates
     - name: "Update the OS package-repo list"
       include_role:
-        name: ext/ans_role_update_repo_servers
+        name: ext/ans_role_config_pkg_repo_list_updates
         tasks_from: inc/update_pkg_repo_list.yml
       vars:
         pkg_repo_list_file_path: "/etc/pacman.d/mirrorlist"
