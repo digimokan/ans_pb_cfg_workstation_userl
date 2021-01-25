@@ -51,11 +51,16 @@
         name: ext/ans_role_config_sudo
       vars:
         user_for_shell_enhancements: "{{ admin_user_and_group_name }}"
-    - name: "Configure bash shell for interactive use"
+    - name: "Configure bash shell for interactive use for user {{ admin_user_and_group_name }}"
       include_role:
         name: ext/ans_role_config_bash
       vars:
         user_name: "{{ admin_user_and_group_name }}"
+    - name: "Create and configure XDG user dirs for '{{ wkst_user_and_group_name }}'"
+      include_role:
+        name: ext/ans_role_config_xdg_user_dirs
+      vars:
+        user_name: "{{ wkst_user_and_group_name }}"
     - name: "Ignore select '.pacnew' files after system upgrades"
       include_role:
         name: ext/ans_role_pacnew_ignore
