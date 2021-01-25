@@ -5,6 +5,7 @@ roles:
   - src: https://github.com/digimokan/ans_role_config_pkg_repo_list_updates
   - src: https://github.com/digimokan/ans_role_config_sudo
   - src: https://github.com/digimokan/ans_role_config_time
+  - src: https://github.com/digimokan/ans_role_config_unofficial_packages
   - src: https://github.com/digimokan/ans_role_config_xdg_user_dirs
   - src: https://github.com/digimokan/ans_role_cpu_microcode
   - src: https://github.com/digimokan/ans_role_pacnew_ignore
