@@ -76,4 +76,10 @@
     - name: "Set up configuration for installing unofficial packages"
       ansible.builtin.include_role:
          name: ans_role_config_unofficial_packages
+    - name: "Install ttf-ms-fonts test aur packge"
+     ansible.builtin.include_role:
+       name: ans_role_config_unofficial_packages
+       tasks_from: inc/add_package.yml
+     vars:
+       package_name: "ttf-ms-fonts"
 
