@@ -16,6 +16,9 @@
         name: ext/ans_role_cpu_microcode
       vars:
         boot_dir_path: "/ROOT/default/@/boot"
+    - name: "Configure persistent system bootup messages"
+      ansible.builtin.include_role:
+        name: ext/ans_role_config_boot_messages
     - name: "Add sudo-users group"
       ansible.builtin.include_role:
         name: ext/ans_role_add_group
