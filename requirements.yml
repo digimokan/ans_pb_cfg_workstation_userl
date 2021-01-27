@@ -4,6 +4,7 @@ roles:
   - src: https://github.com/digimokan/ans_role_config_bash
   - src: https://github.com/digimokan/ans_role_config_boot_messages
   - src: https://github.com/digimokan/ans_role_config_pkg_repo_list_updates
+  - src: https://github.com/digimokan/ans_role_config_sound
   - src: https://github.com/digimokan/ans_role_config_sudo
   - src: https://github.com/digimokan/ans_role_config_time
   - src: https://github.com/digimokan/ans_role_config_unofficial_packages
