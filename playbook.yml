@@ -96,8 +96,8 @@
     - name: "Install and configure the LightDM display manager"
       ansible.builtin.include_role:
         name: ext/ans_role_config_lightdm_dm
-      # vars:
-        # login_menu_hidden_users:
+      vars:
+        login_menu_hidden_users: "{{ admin_user_and_group_name }}"
           # - "{{ admin_user_and_group_name }}"
     - name: "Create and configure XDG user dirs for '{{ wkst_user_and_group_name }}'"
       ansible.builtin.include_role:
