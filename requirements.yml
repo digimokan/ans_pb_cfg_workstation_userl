@@ -6,7 +6,7 @@ roles:
   - src: https://github.com/digimokan/ans_role_config_fonts
   - src: https://github.com/digimokan/ans_role_config_lightdm_dm
   - src: https://github.com/digimokan/ans_role_config_mate_de
-  - src: https://github.com/digimokan/ans_role_config_pkg_repo_list_updates
+  - src: https://github.com/digimokan/ans_role_config_package_upgrades
   - src: https://github.com/digimokan/ans_role_config_sound
   - src: https://github.com/digimokan/ans_role_config_sudo
   - src: https://github.com/digimokan/ans_role_config_time
