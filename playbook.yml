@@ -5,12 +5,12 @@
     sudo_users_group_name: "wheel"
     wkst_user_and_group_name: "userl"
   tasks:
-    - name: "Configure system clock, time, and time zone"
-      ansible.builtin.include_role:
-        name: ext/ans_role_config_time
     - name: "Configure system package management"
       ansible.builtin.include_role:
         name: ext/ans_role_config_package_upgrades
+    - name: "Configure system clock, time, and time zone"
+      ansible.builtin.include_role:
+        name: ext/ans_role_config_time
     - name: "Configure Intel/AMD CPU-microcode updates to apply with initramfs"
       ansible.builtin.include_role:
         name: ext/ans_role_cpu_microcode
