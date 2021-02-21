@@ -105,6 +105,7 @@
         name: ext/ans_role_config_lightdm_dm
       vars:
         session: "mate"
+        login_screen_image_path: "{{ lock_background_picture }}"
     - name: "Create and configure XDG user dirs for '{{ wkst_user_and_group_name }}'"
       ansible.builtin.include_role:
         name: ext/ans_role_config_xdg_user_dirs
