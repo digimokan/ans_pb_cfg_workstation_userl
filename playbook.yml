@@ -92,6 +92,9 @@
       vars:
         install_ms_legacy_fonts: true
         install_ms_vista_fonts: true
+    - name: "Install and configure the LibreOffice office application suite"
+      ansible.builtin.include_role:
+        name: ans_role_config_libreoffice
     - name: "Install and configure the VLC video player"
       ansible.builtin.include_role:
         name: ans_role_config_vlc
