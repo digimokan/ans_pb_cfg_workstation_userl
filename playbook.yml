@@ -107,6 +107,12 @@
         user_name: "{{ wkst_user_and_group_name }}"
         home_page: 'https://www.google.com'
         install_google_widevine_drm_addon: true
+    - name: "Install and configure the Chromium browser"
+      ansible.builtin.include_role:
+        name: ans_role_config_chromium
+      vars:
+        home_page: 'https://www.google.com'
+        install_google_widevine_drm_addon: true
     - name: "Install and configure the MATE desktop environment"
       ansible.builtin.include_role:
         name: ext/ans_role_config_mate_de

@@ -3,6 +3,7 @@ roles:
   - src: https://github.com/digimokan/ans_role_add_user
   - src: https://github.com/digimokan/ans_role_config_bash
   - src: https://github.com/digimokan/ans_role_config_boot_messages
+  - src: https://github.com/digimokan/ans_role_config_chromium
   - src: https://github.com/digimokan/ans_role_config_firefox
   - src: https://github.com/digimokan/ans_role_config_fonts
   - src: https://github.com/digimokan/ans_role_config_libreoffice
