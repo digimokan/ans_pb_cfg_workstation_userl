@@ -121,6 +121,9 @@
     - name: "Install and configure the Simple-Scan scanning application"
       ansible.builtin.include_role:
         name: ans_role_config_simple_scan
+    - name: "Install the Tarsnap backup program, and configure backups"
+      ansible.builtin.include_role:
+        name: ans_role_config_tarsnap
     - name: "Install and configure the MATE desktop environment"
       ansible.builtin.include_role:
         name: ext/ans_role_config_mate_de

@@ -15,6 +15,7 @@ roles:
   - src: https://github.com/digimokan/ans_role_config_sound
   - src: https://github.com/digimokan/ans_role_config_simple_scan
   - src: https://github.com/digimokan/ans_role_config_sudo
+  - src: https://github.com/digimokan/ans_role_config_tarsnap
   - src: https://github.com/digimokan/ans_role_config_time
   - src: https://github.com/digimokan/ans_role_config_unofficial_packages
   - src: https://github.com/digimokan/ans_role_config_video_drivers
