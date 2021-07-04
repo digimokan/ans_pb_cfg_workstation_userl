@@ -13,6 +13,7 @@ roles:
   - src: https://github.com/digimokan/ans_role_config_mate_de
   - src: https://github.com/digimokan/ans_role_config_package_upgrades
   - src: https://github.com/digimokan/ans_role_config_sound
+  - src: https://github.com/digimokan/ans_role_config_simple_scan
   - src: https://github.com/digimokan/ans_role_config_sudo
   - src: https://github.com/digimokan/ans_role_config_time
   - src: https://github.com/digimokan/ans_role_config_unofficial_packages
