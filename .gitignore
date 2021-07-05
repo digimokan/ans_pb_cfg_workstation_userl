@@ -4,3 +4,6 @@ archiso_build
 # external (third-party) roles downloaded by ansible-galaxy cmd
 roles/ext/**
 
+# Ansible vault password to encrypt/decrypt secret vars
+vault_password.txt
+
