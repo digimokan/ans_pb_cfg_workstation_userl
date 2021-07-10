@@ -59,7 +59,7 @@ On the "bootstrap machine," create a new Arch Linux
    $ cd ans_pb_cfg_workstation_userl
    ```
 
-4. Run the [`create_archiso.sh`](create_archiso.sh) script to create the ISO
+4. Run the [`create_archiso.sh`](../create_archiso.sh) script to create the ISO
    image:
 
    ```shell
@@ -91,11 +91,11 @@ disk(s).
 3. Power up the workstation PC. You will see a root prompt, at the `/root`
    directory.
 
-4. Edit [`/root/install_options.yml`](scripts/install_options.yml) to specify the
+4. Edit [`/root/install_options.yml`](../scripts/install_options.yml) to specify the
    installation disks and other options. You can specify one disk, or two disks
    for a mirrored installation.
 
-5. Run the [`/root/install_arch_linux.sh`](scripts/install_arch_linux.sh) script
+5. Run the [`/root/install_arch_linux.sh`](../scripts/install_arch_linux.sh) script
    to install Arch Linux to the workstation.
 
    ```shell
@@ -121,7 +121,7 @@ On the workstation PC, run the post-install configuration script.
 3. Ensure `vault_password.txt` has been created, as desribed in
    [Vault Variables](#vault-variables).
 
-4. Run the `configure.sh` script to configure the workstation.
+4. Run the [`configure.sh`](../configure.sh) script to configure the workstation.
 
    ```shell
    $ ./configure.sh
@@ -140,7 +140,7 @@ was set up during configuration.
    $ cd ans_pb_cfg_workstation_userl
    ```
 
-3. Run the `configure.sh` script to update the workstation.
+3. Run the [`configure.sh`](../configure.sh) script to update the workstation.
 
    ```shell
    $ ./configure.sh
@@ -148,13 +148,13 @@ was set up during configuration.
 
 ## Vault Variables
 
-* The encrypted vault variables are stored in [`vault.yml`](host_vars/vault.yml).
+* The encrypted vault variables are stored in [`vault.yml`](../host_vars/vault.yml).
 
 * Prior to encrypting or decrypting vault variables, the vault password string
   needs to be put into the `vault_password.txt` file
   ([at the root of this repo directory](#source-code-layout)).
 
-* [`playbook.yml`](playbook.yml) automatically uses the vault password file to
+* [`playbook.yml`](../playbook.yml) automatically uses the vault password file to
   decrypt vars in [`vault.yml`](host_vars/vault.yml), via a setting in
   [`ansible.cfg`](ansible.cfg).
 
@@ -164,7 +164,7 @@ was set up during configuration.
    $ ansible-vault encrypt_string 'secret_var_value' --name 'secret_var_name'
    ```
 
-* To decrypt and view a var from [vault.yml](host_vars/vault.yml):
+* To decrypt and view a var from [vault.yml](../host_vars/vault.yml):
 
    ```shell
    $ ansible -i hosts localhost -m ansible.builtin.debug -a var="secret_var_name" -e "@host_vars/vault.yml"
