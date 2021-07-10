@@ -5,7 +5,6 @@
   vars:
     admin_user_and_group_name: "admin"
     sudo_users_group_name: "wheel"
-    wkst_user_and_group_name: "userl"
   tasks:
     - name: "Configure system clock, time, and time zone"
       ansible.builtin.include_role:
