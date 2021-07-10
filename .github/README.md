@@ -72,7 +72,7 @@ On the "bootstrap machine," write the newly-created Live ISO to a USB stick.
 
 1. Insert an empty/formattable USB stick.
 
-2. Run the [`write_archiso.sh`](write_archiso.sh) script to write the ISO image
+2. Run the [`write_archiso.sh`](../write_archiso.sh) script to write the ISO image
    to the USB stick, specifying the USB stick device path:
 
    ```shell
