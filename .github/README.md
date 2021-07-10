@@ -21,7 +21,8 @@ Ansible and shell scripts to install and configure Arch Linux with MATE DE.
 
 ## Purpose
 
-* Set up a workstation/desktop-PC for normal daily use.
+Set up a workstation/desktop-PC for normal daily use:
+
 * Install the Arch Linux OS.
 * Configure the MATE desktop environment.
 * Configure a basic set of applications.
