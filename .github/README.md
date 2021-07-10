@@ -155,7 +155,7 @@ was set up during configuration.
   ([at the root of this repo directory](#source-code-layout)).
 
 * [`playbook.yml`](../playbook.yml) automatically uses the vault password file to
-  decrypt vars in [`vault.yml`](host_vars/vault.yml), via a setting in
+  decrypt vars in [`vault.yml`](../host_vars/vault.yml), via a setting in
   [`ansible.cfg`](ansible.cfg).
 
 * To create or replace an encrypted vault variable, use the string provided by:
