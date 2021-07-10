@@ -1,5 +1,7 @@
 - hosts: localhost
   connection: local
+  vars_files:
+    - host_vars/vault.yml
   vars:
     admin_user_and_group_name: "admin"
     sudo_users_group_name: "wheel"
