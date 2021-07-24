@@ -126,8 +126,8 @@
       ansible.builtin.include_role:
         name: ans_role_config_tarsnap
       vars:
-        user_name: "{{ wkst_user_and_group_name }}"
-        tarsnap_machine_label: "wkst_userl_nuc_test_1"
+        tarsnap_user_id: "{{ wkst_user_and_group_name }}"
+        tarsnap_machine_label: "{{ wkst_user_and_group_name }}_nuc6i7_0"
         enable_automatic_backups: true
         automatic_backup_dirs:
           - "/home/{{ wkst_user_and_group_name }}/Documents/"
