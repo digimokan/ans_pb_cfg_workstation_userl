@@ -126,7 +126,6 @@
       ansible.builtin.include_role:
         name: ans_role_config_tarsnap
       vars:
-        tarsnap_user_id: "{{ wkst_user_and_group_name }}"
         tarsnap_machine_label: "{{ wkst_user_and_group_name }}_nuc6i7_0"
         enable_automatic_backups: true
         automatic_backup_dirs:
