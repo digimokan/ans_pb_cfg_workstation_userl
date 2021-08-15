@@ -143,10 +143,10 @@
         user_name: "{{ wkst_user_and_group_name }}"
         enable_sound_support: true
         enable_printing_support: true
-    - name: "Install and configure the LightDM display manager"
+    - name: "Install and configure the XDM display manager"
       ansible.builtin.include_role:
-        name: ext/ans_role_config_lightdm_dm
+        name: ext/ans_role_config_xdm_dm
       vars:
-        session: "mate"
-        login_screen_image_path: "/usr/share/backgrounds/mate/desktop/Ubuntu-Mate-Cold-no-logo.png"
+        user_name: "{{ wkst_user_and_group_name }}"
+        session: "xfce"
 

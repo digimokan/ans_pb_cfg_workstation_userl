@@ -9,7 +9,6 @@ roles:
   - src: https://github.com/digimokan/ans_role_config_firefox
   - src: https://github.com/digimokan/ans_role_config_fonts
   - src: https://github.com/digimokan/ans_role_config_libreoffice
-  - src: https://github.com/digimokan/ans_role_config_lightdm_dm
   - src: https://github.com/digimokan/ans_role_config_mate_de
   - src: https://github.com/digimokan/ans_role_config_package_upgrades
   - src: https://github.com/digimokan/ans_role_config_sound
@@ -21,6 +20,7 @@ roles:
   - src: https://github.com/digimokan/ans_role_config_video_drivers
   - src: https://github.com/digimokan/ans_role_config_vlc
   - src: https://github.com/digimokan/ans_role_config_xdg_user_dirs
+  - src: https://github.com/digimokan/ans_role_config_xdm_dm
   - src: https://github.com/digimokan/ans_role_cpu_microcode
   - src: https://github.com/digimokan/ans_role_pacnew_ignore
 
