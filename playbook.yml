@@ -148,5 +148,5 @@
         name: ext/ans_role_config_xdm_dm
       vars:
         user_name: "{{ wkst_user_and_group_name }}"
-        session: "xfce"
+        session: "mate"
 
