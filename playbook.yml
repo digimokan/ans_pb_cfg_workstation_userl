@@ -86,9 +86,6 @@
       vars:
         video_card_make: "Intel"
         video_card_series: "HD"
-        config_opengl_3d_accel: true
-        config_video_decode_accel: true
-        config_vulkan: false
     - name: "Install and configure basic sound packages"
       ansible.builtin.include_role:
         name: ext/ans_role_config_sound
