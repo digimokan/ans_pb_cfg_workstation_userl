@@ -10,7 +10,7 @@ roles:
   - src: https://github.com/digimokan/ans_role_config_fonts
   - src: https://github.com/digimokan/ans_role_config_libreoffice
   - src: https://github.com/digimokan/ans_role_config_mate_de
-  - src: https://github.com/digimokan/ans_role_config_sound
+  - src: https://github.com/digimokan/ans_role_config_pulseaudio
   - src: https://github.com/digimokan/ans_role_config_simple_scan
   - src: https://github.com/digimokan/ans_role_config_sudo
   - src: https://github.com/digimokan/ans_role_config_tarsnap
